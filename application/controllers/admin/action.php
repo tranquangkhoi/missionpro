@@ -1,7 +1,7 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
 class Action extends CI_Controller {
-	var $method_arr = array('active','update_status','order_status','update_ship', 'update_product_promotion');
+	var $method_arr = array('active','update_status','order_status','update_ship', 'update_product_promotion', 'update_product_hot');
 	
 	public function __construct(){
 		parent::__construct();
@@ -121,6 +121,24 @@ class Action extends CI_Controller {
         
         $data_set = array(           
             'product_promotion'    => $product_promotion
+        );
+        $this->db->where('product_id', $product_id);
+        if($this->db->update('product', $data_set)){
+            echo 'Xong';
+        }else{
+            echo 'Error';
+        }
+    }
+	
+	public function update_product_hot(){
+        if (!$this->input->is_ajax_request()) {
+           exit('No direct script access allowed');
+        }
+        $product_id     = $this->input->post('product_id');
+        $product_hot = $this->input->post('product_hot');
+        
+        $data_set = array(           
+            'product_hot'    => $product_hot
         );
         $this->db->where('product_id', $product_id);
         if($this->db->update('product', $data_set)){

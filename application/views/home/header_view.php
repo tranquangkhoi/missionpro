@@ -1,231 +1,100 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>
-<html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="vi">
-<![endif]-->
-<!--[if IE 7]>
-<html class="no-js lt-ie9 lt-ie8" lang="vi">
-<![endif]-->
-<!--[if IE 8]>
-<html class="no-js lt-ie9" lang="vi">
- <![endif]-->
- <!--[if IE 9 ]>
-<html class="ie9 no-js">
-<![endif]-->
-<!--[if (gt IE 9)|!(IE)]><!-->
-<html lang="vi">
-   <!--<![endif]-->
+<!-- saved from url=(0019)https://pgi.com.vn/ -->
+<html lang="en">
    <head>
-      <meta charset="utf-8">
-      <!--[if IE]>
-      <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
-      <![endif]-->
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="description" content="<?php echo $desc;?>" />
-      <meta name="keywords" content="<?php echo $key;?>" />
-      <meta name="author" content="">
-      <title><?php echo $title;?></title>
-      <!-- Scripts -->
-      <script src="<?php echo base_url();?>public/home/js/jquery-1.11.1.min.js"></script>
-      <script src='<?php echo base_url();?>public/home/js/jquery-theme.min.js' type='text/javascript'></script>
-      <!-- Styles -->
-      <!-- Header hook for plugins ================================================== -->
-      <!-- End Google Tag Manager -->
-      <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-      <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
-      <![endif]-->
-      <!--[if IE 7]>
-      <link href='<?php echo base_url();?>public/home/css/font-awesome-ie7.css' rel='stylesheet' type='text/css' />
-      <![endif]-->
-      <!--[if lt IE 9]>
-      <script src='//html5shiv.googlecode.com/svn/trunk/html5.js' type='text/javascript'></script>
-      <![endif]-->
-      <link href='<?php echo base_url();?>public/home/css/popup_cart_desktop.css' rel='stylesheet' type='text/css' />
-      <link href='<?php echo base_url();?>public/home/css/bootstrap.min.css' rel='stylesheet' type='text/css' />
-      <link href='<?php echo base_url();?>public/home/css/owl.carousel.css' rel='stylesheet' type='text/css' />
-      <link href='<?php echo base_url();?>public/home/css/owl.theme.default.css' rel='stylesheet' type='text/css' />
-      <link href='<?php echo base_url();?>public/home/css/jquery.fancybox.css' rel='stylesheet' type='text/css' />
-      <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Open+Sans:400,700|Roboto" rel="stylesheet">
-      <link href='<?php echo base_url();?>public/home/css/font-awesome.min.css' rel='stylesheet' type='text/css' />
-      <link href='<?php echo base_url();?>public/home/css/jgrowl.css' rel='stylesheet' type='text/css' />
-      <link href='<?php echo base_url();?>public/home/css/style.css' rel='stylesheet' type='text/css' />
-      <link href="<?php echo base_url();?>public/home/css/magnific-popup.css" rel="stylesheet">
-      <script src='<?php echo base_url();?>public/home/js/jquery.fancybox.js' type='text/javascript'></script>
-      <script src='<?php echo base_url();?>public/home/js/quickviews.js' type='text/javascript'></script>
-      <script src='<?php echo base_url();?>public/home/js/slider.js' type='text/javascript'></script>
-      <!-- icons -->    
-      <link rel="icon" type="image/png" href="<?php echo base_url();?>public/home/images/favicon.png">
-      <script type="text/javascript">
-         var UrlDomain = '<?php echo base_url();?>';
-         $(window).scroll(function(){
-			if($(this).scrollTop()>40){
-			$(".hot-line-mobile").addClass('fix');
-         $(".navbar-mobile").addClass('fix');
-			}else{
-				$(".hot-line-mobile").removeClass('fix');
-            $(".navbar-mobile").removeClass('fix');
-			}
-			
-		  });
-      </script>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="google" content="notranslate">
+      <meta name="language" content="vi">
+      <meta name="robots" content="index, follow">
+      <meta name="author" content="MISSIONPRO">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+      <meta name="format-detection" content="telephone=no">
+      <title><?php echo $title;?></title> 
+      <meta name="description" content="<?php echo $desc;?>">
+      <meta name="keywords" content="<?php echo $key;?>">
+      <meta name="theme-color" content="#fff">
+      <meta property="og:title" content="">
+      <meta property="og:description" content="">
+      <meta property="og:type" content="website">
+      <meta property="og:image" content="">
+      <meta property="og:site_name" content="">
+      <meta property="og:locale" content="vi">
+      <meta property="og:url" content="h">
+      <meta name="apple-mobile-web-app-capable" content="yes">
+      <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+      <meta name="apple-mobile-web-app-capable" content="yes">
+      <meta name="apple-mobile-web-app-title" content="">
+      <!--link-->
+      <link rel="icon" href="<?php echo base_url();?>public/home/images/ico.png">
+      <link rel="canonical" href="">
+      <link rel="alternate" href="" hreflang="vi">
+      <link href="<?php echo base_url();?>public/home/css/layout-full.min.css" rel="stylesheet" as="style">
+      <link href="<?php echo base_url();?>public/home/css/layout-detail.min.css" rel="stylesheet" as="style">
+      <link href="<?php echo base_url();?>public/home/css/home.min.css" rel="stylesheet" type="text/css">
+      <link href="<?php echo base_url();?>public/home/css/home-detail.min.css" rel="stylesheet" type="text/css">
+      <link href="<?php echo base_url();?>public/home/css/popup.min.css" rel="stylesheet" type="text/css">
+      
    </head>
-   <body>
-      <div id="OpacityPage"></div>
-      <div id="notification">
-         <div id="success" class="success" style="display: none;">
-            <span style="color:#3c763d; font-size:30px; font-weight:bold;" ><i class="fa fa-thumbs-o-up" aria-hidden="true"></i></span> 
-            Bạn đã thêm sản phẩm vào giỏ hàng
-         </div>
-      </div>
-      <div id="menu-mobile-display"  class="menu-mobile hidden-lg-up">
-         <div class="content-menu" style="max-height:100%">
-            <div class="title-menu-mobile">
-               <a href="/">Kho gia dụng</a>
-            </div>
-            <div class="navigation">
-               <?php echo $widget_category_mobile;?>
-            </div>
-            <div class="ft-menu-mobile">
-               <?php echo $menubar_mobile;?>
-            </div>
-            <div class="ft-menu-mobile">
-            	<div class="sign-mobile">
-                  <?php
-                     if(!$this->session->userdata('member_validated')){
-                     ?>
-                  <span>
-                  <i class="fa fa-sign-in" aria-hidden="true"></i>
-                  <a href='<?php echo base_url().'member/login.html';?>' id='customer_login_link'>Đăng nhập</a>
-                  </span>
-                  <br>
-                  <span>
-                  <i class="fa fa-user" aria-hidden="true"></i>
-                  <a href='<?php echo base_url().'member/register.html';?>' id='customer_register_link'>Tạo tài khoản</a>
-                  </span>
-                  <?php } else {?>
-                  <span style="color:#FFFFFF"><i class="fa fa-user"></i> &nbsp;<?php echo $this->session->userdata('member_fullname'); ?></span>
-                  <ul class="member-info">
-                     <li><a onClick="location.href='<?php echo base_url().'member/profile.html';?>'">- Cập nhật hồ sơ</a></li>
-                     <li><a href="<?php echo base_url().'member/changepass.html';?>">- Đổi mật khẩu</a></li>
-                     <li><a href="<?php echo base_url().'member/orders.html';?>">- Đơn hàng đã đặt</a></li>
-                     <li><a href="<?php echo base_url().'member/logout.html';?>"><i class="fa fa-sign-in"></i> Thoát</a></li>
-                  </ul>
-                  <?php } ?>
+   <body data-page="Home">
+      <div class="fs-page">
+         <!--Header-->
+         <header class="fs-header">
+            <div class="header-inr fs-has-layout">
+               <div class="hdr-left">
+                  <div class="menu-open-sp fs-sp" data-tab="1">
+                     <div class="fs-pic">
+                        <img width="18" height="18" class="cmPic" src="<?php echo base_url();?>public/home/images/hdr-icon-menu-sp.png" data-src="/<?php echo base_url();?>public/home/images/hdr-icon-menu-sp.png" title="Menu" alt="Menu">
+                        <img width="10" height="10" class="cmPic image-active" src="<?php echo base_url();?>public/home/images/icon-close.png" data-src="/<?php echo base_url();?>public/home/images/icon-close.png" title="Close menu" alt="Close Menu">
+                     </div>
+                  </div>
+                  <div class="logo">
+                     <a class="fs-pic" href="<?php echo base_url();?>" title="MISSIONPRO">
+                     <img width="120" height="19" class="cmPic" src="<?php echo base_url();?>public/home/images/logo.png" data-src="/<?php echo base_url();?>public/home/images/logo.png" title="MISSIONPRO" alt="MISSIONPRO">
+                     </a>
+                  </div>
                </div>
-               <ul>
-                  <li>
-                     <span>
-                        Hotline
-                        <h6><?php echo $company->company_hotline;?></h6>
+               <div class="hdr-right">
+                  <div class="search-caption fs-pc" style="padding-left: 84.5px;">Bạn đang tìm</div>
+                  <div class="search-top" id="searchTopAreaInHeader">
+                     <label class="fs-hide-label">
+                     <span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span><input type="text" name="txt_search" id="txt_search" placeholder="loa karaoke, tai nghe,..." value="" autocomplete="off" class="ui-autocomplete-input">Bạn đang tìm
+                     </label>
+                     <div class="fs-pic search-top-but js-search-top-but"></div>
+                     <div class="search-suggest searchSuggestHeader">
+                     </div>
+                  </div>
+                  <div class="icon-search fs-sp" data-tab="2">
+                     <span class="search-icon">
+                     <img width="22" height="21" class="fs-sp cmPic" src="<?php echo base_url();?>public/home/images/icon-search-sp.png" data-src="/<?php echo base_url();?>public/home/images/icon-search-sp.png" title="search" alt="search">
                      </span>
-                     <img src="<?php echo base_url();?>public/home/images/phone-menu-mobile.png" alt="Gọi ngay"/>
-                  </li>
-               </ul>
-            </div>
-         </div>
-         <div class="button-close">
-            <div id="close-menu" class="btn-close"> <i class="fa fa-bars" aria-hidden="true"></i> </div>
-         </div>
-      </div>
-      <header>
-         <!--
-            <section class=" header-banner hidden-sm-down"> <a href="#" title="#">
-              <div class="banner_top" style="background-image: url('<?php echo base_url();?>public/home/images/banner-top.png');"></div>
-              </a> </section>-->
-         <div class="header-container">
-            <div class="container container_main">
-               <div class="row">
-                  <div class="col-md-12 col-sm-12 col-xs-12 hot-line-mobile hidden-lg-up" >
-                     <span> Hotline :<?php echo $company->company_hotline;?></span>
                   </div>
-                  <div class="col-sm-2 col-xs-3 navbar-mobile nav_mx991 hidden-lg-up"> <a id="showmenu-mobile" class="button-menu"> <i class="fa fa-bars" aria-hidden="true"></i> </a> </div>
-                  <div class="col-lg-3 col-md-8 col-sm-6 col-xs-6 logo_mx991">
-                     <div class="logo"> <a href="<?php echo base_url();?>" title="Kho gia dụng"> <img src="<?php echo base_url();?>public/home/images/logo.png" alt="Kho gia dụng"> </a> </div>
+                  <div class="commitment">
+                     <a href="javascript:void(0)" class="genuine">100% <strong>CHÍNH HÃNG</strong></a>
+                     <a href="tel:0888 888 888" class="hotline">HOTLINE CSKH<strong>0888 888 888</strong></a>
                   </div>
-                  <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 hidden-md-down search-item">
-                     <div class="support_search">
-                        <div class="search_form">
-                           <form action="<?php echo base_url().'search.html';?>" method="get" class="search-form" role="search">
-                              <input placeholder="Nhập từ khóa cần tìm..." class="search_input" required maxlength="70" id="search" type="text" name="qsearch" value="">
-                              <input type="submit" value="Tìm kiếm" class="btnsearch">
-                           </form>
-                        </div>
+                  <div class="cart-toggle">
+                     <a class="link-cart" href="https://pgi.com.vn/cart" title="Cart">
+                     <span class="icon cart-icon">
+                     <img width="33" height="23" class="fs-pc pcPic" src="<?php echo base_url();?>public/home/images/hdr-icon-cart.png" data-src="/<?php echo base_url();?>public/home/images/hdr-icon-cart.png" title="cart" alt="cart">
+                     <img width="33" height="23" class="fs-sp spPic fs-lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="/<?php echo base_url();?>public/home/images/hdr-icon-cart-sp.png" title="cart" alt="cart">
+                     </span>
+                     <span class="cart-number js-cart-number">0</span>
+                     </a>
+                     <div class="cart-notifi">
+                        <p>Thêm vào giỏ hàng thành công </p>
+                        <a href="https://pgi.com.vn/cart" title="Xem giỏ hàng và thanh toán">Xem giỏ hàng và thanh toán</a>
                      </div>
                   </div>
-                  <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 hidden-md-down search-item">
-                     <div class="support_search">
-                        <h5>Hotline : </h5>
-                        <span class="hot-line"> <?php echo $company->company_hotline;?></span>
-                     </div>
+                  <a class="user-toggle" href="https://pgi.com.vn/login"></a>
+                  <div class="flashdeal-link fs-pc">
+                     <a class="fs-pic" href="https://pgi.com.vn/promotion" title="Promotion">
+                     <img width="25" height="25" class="cmPic" src="<?php echo base_url();?>public/home/images/hdr-fire.png" data-src="/<?php echo base_url();?>public/home/images/hdr-fire.png" title="" alt="">
+                     </a>
                   </div>
-                  <div class="col-lg-3 col-md-4 col-sm-4 col-xs-3 hidden-xs account-cart">
-                     <div class="col-lg-8 col-md-7 col-sm-8 hidden-md-down account">
-                        <div> <img class="mg_bt_10" src="<?php echo base_url();?>public/home/images/account.png" alt="Đăng ký hoặc đăng nhập" height="30" width="30"> </div>
-                        <div>
-                           <?php
-                              if(!$this->session->userdata('member_validated')){
-                              ?>
-                           <a class="cl_old"><a href='<?php echo base_url().'member/login.html';?>' id='customer_login_link'>Đăng nhập</a></a> / <a class="cl_old"><a href='<?php echo base_url().'member/register.html';?>' id='customer_register_link'>Đăng ký</a></a>
-                           <?php } else {?>
-                           <div class="cl_old dropdown-toggle-member" data-toggle="dropdown" style="cursor:pointer" data-hover="dropdown">
-                              <span><?php echo $this->session->userdata('member_fullname'); ?></span>
-                              <ul class="dropdown-menu member-info">
-                                 <li><a onClick="location.href='<?php echo base_url().'member/profile.html';?>'">- Cập nhật hồ sơ</a></li>
-                                 <li><a onClick="location.href='<?php echo base_url().'member/changepass.html';?>'">- Đổi mật khẩu</a></li>
-                                 <li><a onClick="location.href='<?php echo base_url().'member/orders.html';?>'">- Đơn hàng đã đặt</a></li>
-                                 <li class="divider"></li>
-                                 <li class="pull-right"><a onClick="location.href='<?php echo base_url().'member/logout.html';?>'"><i class="fa fa-sign-in" aria-hidden="true"></i> Thoát</a></li>
-                              </ul>
-                           </div>
-                           <?php }?>
-                           </span>
-                        </div>
-                     </div>
-                     <div class="col-lg-4 col-md-5 col-sm-6 col-xs-12 cart cart_mx991">
-                        <div class="top-cart-contain">
-                           <div class="mini-cart shopping-cart" onclick="location.href='<?php echo base_url().'giohang.html'?>'">
-                              <div data-toggle="dropdown" data-hover="dropdown" class="basket dropdown-toggle">
-                                 <a href="<?php echo base_url().'giohang.html'?>"><img class="mg_bt_10" src="<?php echo base_url();?>public/home/images/cart.png" alt="Giỏ hàng" width="30" height="30" /></a>
-                                 <div class="cart-box">
-                                    <span class="title cl_old hidden-sm-down">Giỏ hàng</span>
-                                    <span id="cart-total" class="cartCount"></span> 
-                                 </div>
-                                 </a>
-                              </div>
-                              <div class="top-cart-content arrow_box hidden-md-down">
-                                 <div id="detail-cart" class="listcart">
-                                    <div id="short-cart">
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-md-12 col-sm-12 col-xs-12 search_form_mobile hidden-lg-up">
-                     <form action="<?php echo base_url().'search.html';?>" method="get"  class="search-form" role="search">
-                        <input placeholder="Nhập từ khóa cần tìm..." class="search_input_mobile" maxlength="70" id="search" type="text" name="qsearch" value="">
-                        <button class="submit_button"><i class="btnsearch_mobile fa fa-search" aria-hidden="true"></i></button>
-                     </form>
+                  <div class="fs-pic menu-open">
+                     <img width="71" height="17" class="cmPic" src="<?php echo base_url();?>public/home/images/hdr-icon-menu.png" data-src="<?php echo base_url();?>public/home/images/hdr-icon-menu.png" title="menu" alt="menu">
                   </div>
                </div>
             </div>
-         </div>
-      </header>
-      <nav class="hidden-md-down">
-         <div class="container">
-            <div class="row nav_menu">
-               <?php echo $widget_category;?>
-               <div class="col-lg-5 hidden-md-down main-nav">
-                  <?php echo $menubar;?>
-               </div>
-               <div class="col-lg-4 col-md-8 hidden-sm-down social pull-right hidden-xs ">
-                  <div class="social-icon"><a href="#" title ="Theo dõi Kho gia dụng trên Printerest"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></div>
-                  <div class="social-icon"><a href="#" title ="Theo dõi Kho gia dụng trên Youtube"><i class="fa fa-youtube" aria-hidden="true"></i></a></div>
-                  <div class="social-icon"><a href="#" title ="Theo dõi Kho gia dụng trên Google Plus"><i class="fa fa-google-plus" aria-hidden="true"></i></a></div>
-                  <div class="social-icon"><a href="#" title ="Theo dõi Kho gia dụng trên Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></div>
-                  <div class="social-icon"><a href="#" title ="Theo dõi Kho gia dụng trên Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></div>
-               </div>
-            </div>
-         </div>
-      </nav>
+         </header>
+         <!--/Header-->

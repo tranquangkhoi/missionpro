@@ -1,8 +1,13 @@
-<ul id="nav">
-    <li class=" first  parrent  active "><a href="<?php echo base_url();?>">Trang chủ</a></li>
-    <li class=" parrent "><a href="<?php echo base_url().'gioi-thieu.html';?>">Giới thiệu</a></li>
-    <li class=" parrent "><a href="<?php echo base_url().'news.html';?>">Tin tức</a></li>
-    <li class=" parrent "><a href="<?php echo base_url().'giohang.html';?>">Giỏ hàng</a></li>
-    <li class=" parrent "><a href="<?php echo base_url().'order.html';?>">Thanh toán</a></li>
-    <li class=" last  parrent "><a href="<?php echo base_url();?>lien-he.html">Liên hệ</a></li>
-</ul>
+<div class="fs-navigation tab-item" data-tab="3">
+	<div class="sub-title fs-sp">Menu</div>
+	<div class="menu-close close-tab"></div>
+	<div class="nav-inr tab-inr">
+	   <ul>
+	      <li><a href="#" title="Giới thiệu về PGI">Giới thiệu về MISSION PRO</a></li>
+	      <li><a href="#" title="CỬA HÀNG CHÍNH HÃNG">CỬA HÀNG CHÍNH HÃNG</a></li>
+	      <li><a href="#" title="Hệ thống cửa hàng">Hệ thống cửa hàng</a></li>
+	      <li><a href="#" title="tuyển dụng">tuyển dụng</a></li>
+	      <li><a href="#" title="Liên hệ với PGI">Liên hệ với MISSION PRO</a></li>
+	   </ul>
+	</div>
+</div>

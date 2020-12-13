@@ -18,7 +18,7 @@
  * NOTE: If you change these, also change the error_reporting() code below
  *
  */
-	define('ENVIRONMENT', 'production');
+	define('ENVIRONMENT', 'development');
 /*
  *---------------------------------------------------------------
  * ERROR REPORTING
@@ -45,7 +45,6 @@ if (defined('ENVIRONMENT'))
 			exit('The application environment is not set correctly.');
 	}
 }
-
 /*
  *---------------------------------------------------------------
  * SYSTEM FOLDER NAME
@@ -153,7 +152,6 @@ if (defined('ENVIRONMENT'))
 	{
 		exit("Your system folder path does not appear to be set correctly. Please open the following file and correct this: ".pathinfo(__FILE__, PATHINFO_BASENAME));
 	}
-
 /*
  * -------------------------------------------------------------------
  *  Now that we know the path, set the main path constants
@@ -190,6 +188,7 @@ if (defined('ENVIRONMENT'))
 
 		define('APPPATH', BASEPATH.$application_folder.'/');
 	}
+
 
 /*
  * --------------------------------------------------------------------

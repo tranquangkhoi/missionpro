@@ -27,6 +27,21 @@
 			});	
 			
 		}
+    
+    function UpdateProductHot(id, product_hot){
+      var product_hot_value = 0;
+      if (product_hot) {
+        product_hot_value = 1;
+      }
+      
+      $.post("<?php echo base_url().$this->config->item('index_page_add');?>admin/action/update_product_hot",{
+        product_id : id,            
+        product_hot : product_hot_value                
+      },function(data){
+         document.getElementById('update_product_hot_'+id).innerHTML = "<strong>"+data+"</strong>";
+      }); 
+      
+    }
 	</script>
     <!-- Part 1: Wrap all page content here -->
     <div id="wrap">
@@ -144,7 +159,7 @@
                   <th width="5%" style="text-align:center;"><strong>STT</strong></th>                  
                   <th width="10%" style="text-align:center;"><strong>Ảnh</strong></th>                  
                   <th width="30%"><strong>Tên sản phẩm</strong></th>              
-                  <th width="10%"><strong>Khuyến mại</strong></th>
+                  <th width="10%" style="text-align:center;"><strong>SP nổi bật</strong></th>
                   <th width="12%"><strong>Trạng thái</strong></th>                   
                   <th width="18%"><strong>Ngày đăng</strong></th>                   
                   <th width="10%" style="text-align:center;"><strong>Chức năng</strong></th>                
@@ -155,15 +170,15 @@
 			  foreach($product_items as $item){
 				  $stt = $stt + 1;
 				  $checked = '';
-				  if ($item['product_promotion'] == 1) $checked = 'checked';		
+				  if ($item['product_hot'] == 1) $checked = 'checked';		
 			  ?>  
                 <tr>
                     <td style="text-align:center;"><input type="checkbox" class="check_one" name="check_del[]" value="<?php echo $item['product_id'];?>"></td>
                     <td style="text-align:center;"><?php echo $stt;?></td>
                     <td><img class="img-thumbnail" src="<?php echo base_url();?>/public/upload/product/<?php echo 'medium_'.$item['product_image'];?>" /></td>
                     <td><?php echo $item['product_title'];?></td>
-                    <td align="center"><input type="checkbox"  class="check_one" <?php echo $checked?> name="product_promotion" value="1" id="product_promotion" onchange="UpdateProductPromotion(<?php echo $item['product_id'];?>, this.checked)">
-					<div id="update_product_promotion_<?php echo $item['product_id'];?>"></div>
+                    <td align="center"><input type="checkbox"  class="check_one" <?php echo $checked?> name="product_hot" value="1" id="product_hot" onchange="UpdateProductHot(<?php echo $item['product_id'];?>, this.checked)">
+					<div id="update_product_hot_<?php echo $item['product_id'];?>"></div>
 					</td>
                     <td style="text-align:center; background-color:<?php echo @$status_color[$item['product_status']];?>" id="status_color_<?php echo $item['product_id'];?>">
 						<select style="font-size:12px; margin:0px; padding:0px;" id="status_<?php echo $item['product_status'];?>" class="form-control" onchange="ChangeColor(<?php echo $item['product_id'];?>,this.value)">

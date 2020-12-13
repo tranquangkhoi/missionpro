@@ -20,8 +20,10 @@
             <div class="row row-noGutter">
             <?php
                 $cj = count($cate_two);
+                    $index = 0;
                     for($j=1; $j<=$cj; $j++){
                         if($cate_two[$j]['category_parent'] == $cate_one[$i]['category_id']){
+                          $index ++
             ?>
               <div class="col-md-4 text-xs-left">
                 <ul class="text-left">

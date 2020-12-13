@@ -1,5 +1,5 @@
 	<?php echo $header; ?>	
-	<script src="/tinyeditor/tinymce/tinymce.min.js"></script>
+	<script src="<?php echo base_url()?>tinyeditor/tinymce/tinymce.min.js"></script>
 
     <!-- Part 1: Wrap all page content here -->
     <div id="wrap">
@@ -139,16 +139,7 @@
 					</div>
                 
                     
-                    <!-- end body tab product_en -->
-                    
-                   
-                            <script>
-								$('#myTab a').click(function (e) {
-									 e.preventDefault();
-									 $(this).tab('show');
-								})
-                            </script>
-                                              	
+                    <!-- end body tab product_en --> 	
  				</form>               	
           	</div>
 		</div>

@@ -27,6 +27,7 @@ class Menu_model extends CI_Model{
 			$i = $i + 1;
 			$lcate[$i]['category_id'] 			= $row->category_id;
 			$lcate[$i]['category_name'] 		  = $row->category_name;
+			$lcate[$i]['category_icon'] 		  = $row->category_icon;
 			$lcate[$i]['category_level'] 		 = $row->category_level;
 			$lcate[$i]['category_slug'] 		  = $row->category_slug;
 			$lcate[$i]['category_parent'] 		= $row->category_parent;

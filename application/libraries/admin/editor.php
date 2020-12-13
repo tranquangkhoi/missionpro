@@ -44,7 +44,7 @@ class Editor{
 						min_height: $min_height,
 						height : $height,
 						width: $width,
-						external_filemanager_path:\"/tinyeditor/filemanager/\",
+						external_filemanager_path:\"$path/tinyeditor/filemanager/\",
    						filemanager_title:\"Responsive Filemanager\" ,
    						external_plugins: { \"filemanager\" : \"../filemanager/plugin.min.js\"}
 						

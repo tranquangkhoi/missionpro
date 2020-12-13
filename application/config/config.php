@@ -17,7 +17,7 @@
 
 
 
-$config['base_url']	= 'http://bedota.com';
+$config['base_url']	= 'http://localhost/missionpro';
 
 /*
 |--------------------------------------------------------------------------

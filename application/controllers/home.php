@@ -42,9 +42,9 @@ class Home extends CI_Controller {
      */
     public function index(){        
         /* Begin Header */        
-        $html['title']        = 'Bedota.com Chuyên cung cấp các sản phẩm gia dụng.';
-        $html['desc']         = 'Chuyên cung cấp Đồ chơi trẻ em, đồ chơi thông minh, đồ cho mẹ và bé, đồ nhà bếp cao cấp giá rẻ" name="description';
-        $html['key']         = 'đồ chơi trẻ em, đồ chơi thông minh, đồ cho mẹ và bé, đồ nhà bếp cao cấp giá rẻ, tranhgiấy cuốn, ô cầm tay, áo đi mưa, thời trang mùa mưa, ';        
+        $html['title']        = 'MISSIONPRO | Mua sắm âm thanh 100% chính hãng';
+        $html['desc']         = 'Thảnh thơi mua sắm tại MISSIONPRO ✅Chính Hãng, Uy Tín, Giá Tốt ✅ Thương Hiệu | Hotline: 0888 888 888';
+        $html['key']          = 'MISSIONPRO, loa, thiết bị âm thanh, tai nghe chính hãng';        
         
         $html['cate']        = $this->menu_model->get_category();
         $html['cate_one']    = $this->menu_model->get_category_level(1);
@@ -59,8 +59,7 @@ class Home extends CI_Controller {
         $data_menu['pcate'] = $html['pcate'];
         $html['menubar'] = $this->load->view('home/menubar_view',$data_menu,true);
         $html['menubar_mobile'] = $this->load->view('home/menubar_mobile_view',$data_menu,true);
-        $html['widget_category_mobile']     = $this->load->view('home/widget_category_mobile_view',$html,true);
-        $html['widget_category']       = $this->load->view('home/widget_category_view_float',$html,true);
+        $html['widget_category']       = $this->load->view('home/widget_category_view',$html,true);
         $data['header'] = $this->load->view('home/header_view',$html,true);
         /* End Header */
         
@@ -75,12 +74,21 @@ class Home extends CI_Controller {
         /* End Footer */
         
         /* Begin Widget */
-        $data['promotion_product']       = $this->common_model->get_promotion_product(4);
+        $data['product_items']       = $this->common_model->get_hot_products(8);
+        $hot_products_count       = $this->common_model->get_count_hot_products();
+        $per_page = 8;
+        $data["total_pages"] = ceil($hot_products_count/$per_page); 
+
+        $data['widget_product_item_view']       = $this->load->view('home/widget_product_item_view',$data,true);
+        $data['widget_product_hot']       = $this->load->view('home/widget_product_hot_view',$data,true);
+        $data['widget_home_news']       = $this->load->view('home/widget_home_news',$data,true);
+        $data['widget_support']       = $this->load->view('home/widget_support_view',$data,true);
         /* End Widget */
         
         /* begin banner */
-        $data['banner_slide'] = $this->home_model->get_banner(0,10);
-        $data['banner_body']  = $this->home_model->get_banner(1,2);        
+        $data['banner_main'] = $this->home_model->get_banner(0,2);
+        $data['banner_right_top'] = $this->home_model->get_banner(1,2);
+        $data['banner_right_bottom']  = $this->home_model->get_banner(2,2);        
         
         
         $cate_top = $html['cate_one'];        
@@ -125,7 +133,7 @@ class Home extends CI_Controller {
         $html['menubar'] = $this->load->view('home/menubar_view',$data_menu,true);
         $html['menubar_mobile'] = $this->load->view('home/menubar_mobile_view',$data_menu,true);
         $html['widget_category_mobile']     = $this->load->view('home/widget_category_mobile_view',$html,true);
-        $html['widget_category']       = $this->load->view('home/widget_category_view_float',$html,true);
+        $html['widget_category']       = $this->load->view('home/widget_category_view',$html,true);
         $data['header']     = $this->load->view('home/header_view',$html,true);
         /* End Header */
         
@@ -151,6 +159,7 @@ class Home extends CI_Controller {
         $data['category_slug_crr']   = $category->category_slug;
         $data['category_name_crr']   = $category->category_name;
         $data['category_review_crr'] = $category->category_review;
+        $data['widget_support']       = $this->load->view('home/widget_support_view',$data,true);
         //get path cetargory
         $data['path'] =  $this->product_model->get_path($category->category_path);
         $path = $data['path'];
@@ -198,15 +207,14 @@ class Home extends CI_Controller {
         }
         $this->pagination->initialize($config1);
         $data['pagination'] = $this->pagination->create_links();
-        $data['product_items'] = $this->product_model->index($config1["per_page"], $offset, $category->category_children,$data['sort']);        
+        $data['product_items'] = $this->product_model->index($config1["per_page"], $offset, $category->category_children,$data['sort']);
+
+
+
+        $data['widget_product_item_view']       = $this->load->view('home/widget_product_item_view',$data,true);
+        $data['widget_product']       = $this->load->view('home/widget_product_view',$data,true);   
         
-        if($data['type']=='grid'){
-            $this->load->view('home/sanpham/grid_view',$data);
-        }elseif($data['type']=='list'){
-            $this->load->view('home/sanpham/list_view',$data);
-        }else{
-            $this->load->view('home/sanpham/grid_view',$data);
-        }            
+        $this->load->view('home/sanpham/grid_view',$data);          
     }
     
     public function chitietsanpham(){

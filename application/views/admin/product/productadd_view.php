@@ -1,5 +1,5 @@
 	<?php echo $header; ?>	
-	<script src="/tinyeditor/tinymce/tinymce.min.js"></script>
+	<script src="<?php echo base_url()?>tinyeditor/tinymce/tinymce.min.js"></script>
 
     <!-- Part 1: Wrap all page content here -->
     <div id="wrap">

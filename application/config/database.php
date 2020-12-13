@@ -44,14 +44,13 @@
 | The $active_record variables lets you determine whether or not to load
 | the active record class
 */
-
 $active_group = 'default';
 $active_record = TRUE;
 
 $db['default']['hostname'] = 'localhost';
-$db['default']['username'] = 'moctra_123';
-$db['default']['password'] = 'vdmbQ9TvAe';
-$db['default']['database'] = 'moctra_bedota';
+$db['default']['username'] = 'root';
+$db['default']['password'] = '';
+$db['default']['database'] = 'missonpro';
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = TRUE;

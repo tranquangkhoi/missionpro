@@ -57,19 +57,17 @@ class Category_model extends CI_Model{
 			}
 			
 			//upload image file	
-			$category_logo_name = '';
-			/*
-			if ($_FILES['category_logo']['name']<>''){
-				
-				if($this->back->upload_file('./public/upload/category/','category_logo')){
+			$category_icon = '';
+			if ($_FILES['category_icon']['name']<>'' && $code_msg==""){				
+				if($this->back->upload_file('./public/upload/category/','category_icon')){
 					$data_upload = $this->upload->data();				
 					//create thumb
-					//if($this->back->create_thumb($data_upload['full_path'],$data_upload['file_name'],$data_upload['is_image'],120,80)){
-						$category_logo_name = $data_upload['file_name'];
-					//}								
+					if($this->back->create_thumb($data_upload['full_path'],$data_upload['file_name'],$data_upload['is_image'],90,90,'small_')){
+						$this->back->create_thumb($data_upload['full_path'],$data_upload['file_name'],$data_upload['is_image'],270,270,'medium_');
+						$category_icon = $data_upload['file_name'];
+					}								
 				}
 			}
-			*/
 			
 						
 			if($code_msg==""){								
@@ -80,7 +78,7 @@ class Category_model extends CI_Model{
 				   'category_meta_key'	  	=> $category_meta_key,				   				 
 				   'category_parent'	 	=> $category_parent,
 				   'category_order' 	 	=> $category_order,
-				   'category_logo' 	 	  	=> $category_logo_name,
+				   'category_icon' 	        => $category_icon,
 				   'category_slug' 	 	  	=> $category_slug
 				   
 				);			
@@ -167,6 +165,7 @@ class Category_model extends CI_Model{
 			$category_parent_old	= $row->category_parent;
 			$category_parent		= $row->category_parent;
 			$category_children 	   	= $row->category_children;
+			$image_old	  			= $row->category_icon<>'' ? $row->category_icon : '';
 			
 			
 		}else{		
@@ -194,6 +193,7 @@ class Category_model extends CI_Model{
 			$category_order 		= $this->input->post('category_order') ? $this->input->post('category_order') : 1;
 			$category_parent    	= $this->input->post('category_parent');
 			$category_parent_old    = $this->input->post('category_parent_old');	
+			$image_old  = $this->input->post('image_old');
 			
 			if($category_name == ''){				
 				$code_msg = '0';
@@ -208,12 +208,26 @@ class Category_model extends CI_Model{
 				}
 			}
 			*/
-		
+			//upload image file	
+			$category_icon = $image_old;
+			if ($_FILES['category_icon']['name']<>'' && $code_msg==""){				
+				if($this->back->upload_file('./public/upload/category/','category_icon')){
+					$data_upload = $this->upload->data();				
+					//create thumb
+					if($this->back->create_thumb($data_upload['full_path'],$data_upload['file_name'],$data_upload['is_image'],90,90,'small_')){
+						$this->back->create_thumb($data_upload['full_path'],$data_upload['file_name'],$data_upload['is_image'],270,270,'medium_');
+						$this->back->delete_file('./public/upload/category/', $image_old);
+						$this->back->delete_file('./public/upload/category/', 'small_'.$image_old);
+						$this->back->delete_file('./public/upload/category/', 'medium_'.$image_old);
+						$category_icon = $data_upload['file_name'];
+					}								
+				}
+			}
 						
 			if($code_msg==""){
-					if($category_logo_name<>''){
+					if($category_icon<>''){
 						$data_category = array(				
-						   'category_logo'   		=> $category_logo_name						   			  
+						   'category_icon'   		=> $category_icon						   			  
 						);	
 						$this->db->where('category_id', $category_id);					
 						$this->db->update('category', $data_category);
@@ -320,7 +334,8 @@ class Category_model extends CI_Model{
 			'category_meta_key'	 		=> $category_meta_key,						
 			'category_select'	      	=> $category_select,
 			'category_order'  	 	   	=> $category_order,
-			'category_parent_old'  	  	=> $category_parent_old,									
+			'category_parent_old'  	  	=> $category_parent_old,	
+			'image_old'  				=> $image_old,									
 			'code_msg'	   		     	=> $code_msg			
 		);		
 		return $f_category;	
@@ -445,6 +460,22 @@ class Category_model extends CI_Model{
 			return false;
 		}else{
 			return true;
+		}
+	}
+
+	public function delimg($id){
+		$sql = "SELECT * FROM category WHERE category_id=".$id;		
+		$query = $this->db->query($sql);
+		$row = $query->row();
+		$category_icon = $row->category_icon;
+		$this->back->delete_file('./public/upload/category/', $category_icon);
+		$this->back->delete_file('./public/upload/category/', 'small_'.$category_icon);
+		$this->back->delete_file('./public/upload/category/', 'medium_'.$category_icon);
+		$sql = "UPDATE category SET category_icon = '' WHERE category_id=".$id;
+		if($this->db->query($sql)){
+			return TRUE;
+		}else{
+			return FALSE;
 		}
 	}
 	

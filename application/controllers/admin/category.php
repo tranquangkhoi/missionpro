@@ -1,7 +1,7 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
 class Category extends CI_Controller {
-	var $method_arr = array('edit','add','del','sortup','sortdown','filter');
+	var $method_arr = array('edit','add','del','sortup','sortdown','filter','delimg');
 	var $check_rules = array('edit','add','del');
 	
 	public function __construct(){
@@ -163,6 +163,21 @@ class Category extends CI_Controller {
 		$text_area_review = $this->editor->view_file(".editme","550","200","546","200");
 		$data['f_category']['text_area_review'] = $text_area_review;		
 		$this->load->view('admin/category/'.$this->uri->segment(2).'edit_view',$data);
+	}
+	
+	public function delimg(){
+		if (!$this->input->is_ajax_request()) {
+		   exit('No direct script access allowed');
+		}
+		$category_id = is_numeric($this->uri->segment(4)) ? $this->uri->segment(4) : 0;
+		if(!$this->category_model->check_id('category','category_id',$category_id)){
+			echo 'Error delete file';
+		}
+		if($this->category_model->delimg($category_id)){
+			echo 'OK';
+		}else{
+			echo 'Error';
+		}
 	}
 	
 	public function del(){				
