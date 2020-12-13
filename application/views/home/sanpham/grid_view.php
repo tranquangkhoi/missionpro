@@ -13,8 +13,8 @@
                         </div>
                      </div>
                      <div class="fs-pic">
-                        <img class="fs-pc pcPic" src="https://cdn.pgi.com.vn//UploadTemp/df0710a8-e068-4f0b-a612-6391b071c666.jpg" data-src="https://cdn.pgi.com.vn//UploadTemp/df0710a8-e068-4f0b-a612-6391b071c666.jpg" title="." alt=".">
-                        <img class="fs-sp spPic fs-lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://cdn.pgi.com.vn//UploadTemp/df0710a8-e068-4f0b-a612-6391b071c666.jpg" title="." alt=".">
+                        <img class="fs-pc pcPic" src="<?php echo base_url();?>public/home/images/banner_category.jpg" data-src="<?php echo base_url();?>public/home/images/banner_category.jpg" title="." alt=".">
+                        <img class="fs-sp spPic fs-lazy" src="<?php echo base_url();?>public/home/images/banner_category.jpg" data-src="<?php echo base_url();?>public/home/images/banner_category.jpg" title="." alt=".">
                      </div>
                   </div>
                </div>
@@ -220,5 +220,20 @@
    <?php echo $widget_product;?>
    <?php echo $widget_support;?>
 </div>
+<script>
+    var filterModel = {
+        CategoryId: 15,
+        Page: 1,
+        IsNext: true,
+        FilterFeatures: null,
+        FilterSubCategoryId: null,
+        FilterDemandUsers: null,
+        FilterBrands: null,
+        MaxPrice: 0,
+        MinPrice: 0,
+        SortType: 0
+    };
+</script>
 
 <?php echo $footer; ?>
+<script src="<?php echo base_url();?>public/home/js/category.min.js"></script>

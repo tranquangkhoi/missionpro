@@ -19,7 +19,7 @@
                }
                ?>
             <li class="fs-sp line-sp">
-               <a href="https://pgi.com.vn/promotion" title="Ưu đãi">
+               <a href="https://misionpro.com.vn/promotion" title="Ưu đãi">
                Ưu đãi
                <span class="icon fs-sp">
                <img width="20" height="20" class="cmPic" src="<?php echo base_url();?>public/home/images/side-icon-gift.png" data-src="/<?php echo base_url();?>public/home/images/side-icon-gift.png" title="Ưu đãi" alt="Ưu đãi">
@@ -28,7 +28,7 @@
                </a>
             </li>
             <li class="fs-sp line-sp">
-               <a href="https://pgi.com.vn/cua-hang" title="Cửa hàng">
+               <a href="https://misionpro.com.vn/cua-hang" title="Cửa hàng">
                Cửa hàng
                <span class="icon fs-sp">
                <img width="23" height="20" class="cmPic" src="<?php echo base_url();?>public/home/images/side-icon-store.png" data-src="/<?php echo base_url();?>public/home/images/side-icon-store.png" title="Cửa hàng" alt="Cửa hàng">

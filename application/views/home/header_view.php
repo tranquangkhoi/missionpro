@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!-- saved from url=(0019)https://pgi.com.vn/ -->
 <html lang="en">
    <head>
       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -73,7 +72,7 @@
                      <a href="tel:0888 888 888" class="hotline">HOTLINE CSKH<strong>0888 888 888</strong></a>
                   </div>
                   <div class="cart-toggle">
-                     <a class="link-cart" href="https://pgi.com.vn/cart" title="Cart">
+                     <a class="link-cart" href="https://missionpro.com.vn/cart" title="Cart">
                      <span class="icon cart-icon">
                      <img width="33" height="23" class="fs-pc pcPic" src="<?php echo base_url();?>public/home/images/hdr-icon-cart.png" data-src="/<?php echo base_url();?>public/home/images/hdr-icon-cart.png" title="cart" alt="cart">
                      <img width="33" height="23" class="fs-sp spPic fs-lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="/<?php echo base_url();?>public/home/images/hdr-icon-cart-sp.png" title="cart" alt="cart">
@@ -82,12 +81,12 @@
                      </a>
                      <div class="cart-notifi">
                         <p>Thêm vào giỏ hàng thành công </p>
-                        <a href="https://pgi.com.vn/cart" title="Xem giỏ hàng và thanh toán">Xem giỏ hàng và thanh toán</a>
+                        <a href="https://missionpro.com.vn/cart" title="Xem giỏ hàng và thanh toán">Xem giỏ hàng và thanh toán</a>
                      </div>
                   </div>
-                  <a class="user-toggle" href="https://pgi.com.vn/login"></a>
+                  <a class="user-toggle" href="https://missionpro.com.vn/login"></a>
                   <div class="flashdeal-link fs-pc">
-                     <a class="fs-pic" href="https://pgi.com.vn/promotion" title="Promotion">
+                     <a class="fs-pic" href="https://missionpro.com.vn/promotion" title="Promotion">
                      <img width="25" height="25" class="cmPic" src="<?php echo base_url();?>public/home/images/hdr-fire.png" data-src="/<?php echo base_url();?>public/home/images/hdr-fire.png" title="" alt="">
                      </a>
                   </div>

@@ -7,29 +7,29 @@
                      <div class="small-title">Chăm sóc khách hàng</div>
                      <ul>
                         <li>
-                           <a href="https://pgi.com.vn/faq" title="Các câu hỏi thường gặp">Các câu hỏi thường gặp</a>
+                           <a href="https://missionpro.com.vn/faq" title="Các câu hỏi thường gặp">Các câu hỏi thường gặp</a>
                         </li>
                         <li>
-                           <a href="https://pgi.com.vn/mua-hang-va-van-chuyen" title="Cách thức mua hàng &amp; vận chuyển">Cách thức mua hàng &amp; vận chuyển</a>
+                           <a href="https://missionpro.com.vn/mua-hang-va-van-chuyen" title="Cách thức mua hàng &amp; vận chuyển">Cách thức mua hàng &amp; vận chuyển</a>
                         </li>
                         <li>
-                           <a href="https://pgi.com.vn/huong-dan-mua-tra-gop" title="Hướng dẫn mua trả góp">Hướng dẫn mua trả góp</a>
+                           <a href="https://missionpro.com.vn/huong-dan-mua-tra-gop" title="Hướng dẫn mua trả góp">Hướng dẫn mua trả góp</a>
                         </li>
-                        <li><a href="https://pgi.com.vn/chinh-sach-doi-tra" title="Chính sách đổi trả &amp; hoàn tiền">Chính sách đổi trả &amp; hoàn tiền</a></li>
-                        <li><a href="https://pgi.com.vn/dieu-khoan-bao-hanh" title="Các điều khoản bảo hành">Các điều khoản bảo hành</a></li>
+                        <li><a href="https://missionpro.com.vn/chinh-sach-doi-tra" title="Chính sách đổi trả &amp; hoàn tiền">Chính sách đổi trả &amp; hoàn tiền</a></li>
+                        <li><a href="https://missionpro.com.vn/dieu-khoan-bao-hanh" title="Các điều khoản bảo hành">Các điều khoản bảo hành</a></li>
                         <li>
-                           <a href="https://pgi.com.vn/bao-mat-thanh-toan" title=" Chính sách bảo mật thanh toán">
+                           <a href="https://missionpro.com.vn/bao-mat-thanh-toan" title=" Chính sách bảo mật thanh toán">
                            Chính sách bảo mật thanh toán
                            </a>
                         </li>
                         <li>
-                           <a href="https://pgi.com.vn/bao-mat-thong-tin-ca-nhan" title="Chính sách bảo mật thông tin cá nhân">
+                           <a href="https://missionpro.com.vn/bao-mat-thong-tin-ca-nhan" title="Chính sách bảo mật thông tin cá nhân">
                            Chính sách bảo mật thông tin cá nhân
                            </a>
                         </li>
                         <li>
-                           <a href="mailto:sales@pgi.com.vn" title="sales@pgi.com.vn">
-                           Hỗ trợ khách hàng: sales@pgi.com.vn
+                           <a href="mailto:sales@missionpro.com.vn" title="sales@missionpro.com.vn">
+                           Hỗ trợ khách hàng: sales@missionpro.com.vn
                            </a>
                         </li>
                      </ul>
@@ -37,17 +37,17 @@
                   <div class="about-pgi">
                      <div class="small-title">về missionpro</div>
                      <ul>
-                        <li><a href="https://pgi.com.vn/gioi-thieu" title="Giới thiệu về PGI">Giới thiệu về Missionpro</a></li>
-                        <li><a href="https://pgi.com.vn/tuyen-dung" title="Tuyển Dụng">Tuyển Dụng</a></li>
-                        <li><a href="https://pgi.com.vn/cua-hang" title="Hệ thống cửa hàng">Hệ thống cửa hàng</a></li>
-                        <li><a href="https://pgi.com.vn/lien-he-voi-pgi" title="Liên hệ với PGI">Liên hệ với Missionpro</a></li>
+                        <li><a href="https://missionpro.com.vn/gioi-thieu" title="Giới thiệu về Missionpro">Giới thiệu về Missionpro</a></li>
+                        <li><a href="https://missionpro.com.vn/tuyen-dung" title="Tuyển Dụng">Tuyển Dụng</a></li>
+                        <li><a href="https://missionpro.com.vn/cua-hang" title="Hệ thống cửa hàng">Hệ thống cửa hàng</a></li>
+                        <li><a href="https://missionpro.com.vn/lien-he" title="Liên hệ với Missionpro">Liên hệ với Missionpro</a></li>
                      </ul>
                   </div>
                   <div class="agentcy-pgi">
                      <div class="small-title">trở thành đại lý của missionpro</div>
                      <ul>
                         <li>
-                           <a href="https://pgi.com.vn/tro-thanh-dai-ly" title=" Đăng ký trở thành Đại Lý">
+                           <a href="https://missionpro.com.vn/tro-thanh-dai-ly" title=" Đăng ký trở thành Đại Lý">
                            Đăng ký trở thành Đại Lý
                            </a>
                         </li>
@@ -57,36 +57,22 @@
                      <ul>
                         <li>
                            <p>Gọi bảo hành (8h-17h30)</p>
-                           <a class="tel" href="tel:028 6299 0552" title="028 6299 0552/0">028 6299 0552/0</a>
+                           <a class="tel" href="" title=""></a>
                         </li>
                         <li>
                            <p>Gọi kỹ thuật (8h-17h30)</p>
-                           <a class="tel" href="tel:028 6299 0552" title="028 6299 0552/103">028 6299 0552/103</a>
+                           <a class="tel" href="" title=""></a>
                         </li>
                      </ul>
                   </div>
                   <div class="payments">
                      <div class="small-title">phương thức thanh toán</div>
                      <div class="fs-pic payment-accept">
-                        <img class="cmPic fs-lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="<?php echo base_url();?>public/home/images/card.png" title="Chấp nhận thanh toán" alt="Chấp nhận thanh toán">
+                        
                      </div>
-                     <div class="small-title">liên kết với pgi</div>
+                     <div class="small-title">liên kết với chúng tôi</div>
                      <ul class="fs-social">
-                        <li class="facebook">
-                           <a class="fs-pic fs-hide-label" href="https://www.facebook.com/pgi.com.vn" title="facebook" target="_blank">
-                           <img class="cmPic fs-lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="<?php echo base_url();?>public/home/images/social-icon-facebook.png" title="facebook" alt="facebook">facebook
-                           </a>
-                        </li>
-                        <li class="youtube">
-                           <a class="fs-pic fs-hide-label" href="https://www.youtube.com/channel/UC9oNMhVeWXE1F00KfXsQ3QA" title="youtube" target="_blank">
-                           <img class="cmPic fs-lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="<?php echo base_url();?>public/home/images/social-icon-youtube.png" title="youtube" alt="youtube">youtube
-                           </a>
-                        </li>
-                        <li class="intagram">
-                           <a class="fs-pic fs-hide-label" href="https://www.instagram.com/pgi.com.vn/" title="intagram" target="_blank">
-                           <img class="cmPic fs-lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="<?php echo base_url();?>public/home/images/social-icon-intagram.png" title="intagram" alt="intagram">intagram
-                           </a>
-                        </li>
+                        
                      </ul>
                   </div>
                   <div class="subscribe">
@@ -106,8 +92,8 @@
                   <img class="cmPic fs-lazy" src="<?php echo base_url();?>public/home/images/logo-bot.png" data-src="<?php echo base_url();?>public/home/images/logo-bot.png" title="Missionpro" alt="Missionpro">
                   </a>
                   <div class="fs-txt">
-                     <p><strong>Địa chỉ văn phòng:</strong> 10 Trịnh Văn Cấn, P. Cầu Ông Lãnh, Quận 1, TP.HCM</p>
-                     <p><strong>Điện thoại:</strong> 0818 808 808</p>
+                     <p><strong>Địa chỉ văn phòng:</strong> </p>
+                     <p><strong>Điện thoại:</strong> 0888 888 888</p>
                   </div>
                </div>
                <div class="copyright fs-pc">
@@ -149,6 +135,7 @@
          currentPageName = 'Homepage';
       </script>
       <script src="<?php echo base_url();?>public/home/js/home.min.js"></script>
+      <script src="<?php echo base_url();?>public/home/js/backend-common.min.js"></script>
       <script src="<?php echo base_url();?>public/home/js/api.js" async="" defer=""></script>
       <div>
          <link href="<?php echo base_url();?>public/home/css/toastr.min.css" rel="stylesheet" type="text/css">

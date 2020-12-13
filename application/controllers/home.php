@@ -193,7 +193,7 @@ class Home extends CI_Controller {
         $config1["base_url"]  = base_url().$page_url.'/page';                
         $config1['first_url'] = '1.html?type='.$data['type'].'&sort='.$data['sort'];
         $config1["total_rows"] = $this->product_model->record_count($category->category_children);                        
-        $config1['per_page'] = 20;
+        $config1['per_page'] = 12;
         $config1['uri_segment'] = $ppage;
         $config1['num_links'] = 4;    
         $config1["total_pages"] = ceil($config1["total_rows"]/$config1['per_page']); 
